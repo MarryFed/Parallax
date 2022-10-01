@@ -1,0 +1,58 @@
+body {
+    margin: 0;
+}
+* {
+    box-sizing: border-box;
+}
+.scene {
+z-index: -1;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    min-height: 100vh;
+}
+.layer {
+    position: absolute;
+    left: -10%;
+    top: 0;
+    width: 110%;
+    height: 100%;
+}
+.layer-1 {
+    background: url('img/cloud.png') center no-repeat;
+    background-size: cover;
+}
+.layer-2 {
+    background: url('img/cloud2.png') center no-repeat;
+    background-size: cover;
+}
+
+header {
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+font-size: 40pt;
+color: rgb(96, 175, 245);
+
+}
+.container {
+    display: flex;
+    height: 100vh;
+    /* background-color: #e6e6fa; */
+    justify-content: space-around;
+    align-items: center;
+}
+.card {
+    perspective: 1000px;
+    transform-style: preserve-3d;
+}
+.card-item {
+    /* background-color: aliceblue; */
+    background: url('img/girl1.png');
+    width: 250px;
+    height: 300px;
+    transition: transform 0.2s;
+}
